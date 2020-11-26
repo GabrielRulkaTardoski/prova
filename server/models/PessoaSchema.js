@@ -1,4 +1,4 @@
-//todas as tabelas e atts do banco + entidade
+//Todas as tabelas e atributos do banco + entidade
 const mongoose = require("mongoose");
 const pessoaSchema = new mongoose.Schema
 ({
@@ -17,7 +17,7 @@ const pessoaSchema = new mongoose.Schema
         type: Number,
         required: [true, "Idade é obrigatória, for some reason."]
     },
-    data: 
+    criadoem: 
     {
         type: Date,
         default: Date.now
