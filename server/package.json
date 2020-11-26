@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "nodemon ./server/index.js"
+        "dev": "nodemon ./index.js"
     },
     "repository": {
         "type": "git",
@@ -16,18 +16,18 @@
         "Desenvolvimento",
         "Web"
     ],
-    "author": "Dieiverson, Igor M., Gabriel R.",
+    "author": "Gabriel R.T",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/Dieiverson/Trabalho_Web_2/issues"
+        "url": ""
     },
-    "homepage": "https://github.com/Dieiverson/Trabalho_Web_2#readme",
+    "homepage": "",
     "dependencies": {
+        "13": "0.0.0",
         "express": "^4.17.1",
-        "mongoose": "^5.10.7",
-        "node": "^15.2.1"
+        "mongoose": "^5.10.7"
     },
     "devDependencies": {
-        "nodemon": "^2.0.4"
+        "nodemon": "^2.0.6"
     }
 }
