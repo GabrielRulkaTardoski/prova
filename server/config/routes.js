@@ -3,10 +3,6 @@ const router = express.Router();
 const pessoaController = require("../controllers/PessoaController.js");
 /*router.get("/", usuarioController.Get);
 */
-router.post("/Pessoa/Cadastrar", pessoaController.Cadastrar);
-router.get("/Pessoa/Listar", pessoaController.Listar);
-router.post("/Pessoa/Buscar/:cpfPessoa", pessoaController.Buscar);
-router.post("/Pessoa/Alterar", pessoaController.Alterar);
-router.get("/Pessoa/Remover/:cpfPessoa", pessoaController.Remover);
-//router.get("/Login/:usuario/:senha", pessoaController.Login);
+router.post("/pessoa/cadastrar", pessoaController.Cadastrar);
+router.get("/pessoa/listar", pessoaController.Listar);
 module.exports = router;
