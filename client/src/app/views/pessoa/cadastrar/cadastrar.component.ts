@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { stringify } from 'querystring';
+import { ActivatedRoute, Router } from '@angular/router';
+import { pessoa } from 'src/app/models/pessoa';
+import { PessoaService } from 'src/app/services/pessoa.service';
 
 @Component({
   selector: 'app-cadastrar',
@@ -8,15 +10,20 @@ import { stringify } from 'querystring';
 })
 export class CadastrarComponent implements OnInit 
 {
+  nomes:string;
+  cpfs:string;
+  idades:number
+  constructor
+  (
+    private service: 
+    PessoaService, private route: ActivatedRoute, private router: Router
+  ) 
+  {}
+ 
+  pessoa:pessoa= new pessoa();
 
-  constructor() 
-  {
-    nomes:String;
-    cpf:String;
-    idade:Number
-
-   }
-
+   cadastrar():void{this.pessoa.nome = this.nomes; this.pessoa.cpf = this.cpfs; this.pessoa.idade = this.idades}
+   
   ngOnInit(): void 
   {
 
