@@ -8,7 +8,6 @@ import { pessoa } from '../models/pessoa';
 })
 export class PessoaService 
 {
-
   constructor(private http: HttpClient ) { }
   BASEURL = "http://localhost:1234/";
   cadastrar(pessoa: pessoa): Observable<pessoa>{
