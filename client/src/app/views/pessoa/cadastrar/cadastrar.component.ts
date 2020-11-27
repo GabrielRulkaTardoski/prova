@@ -22,8 +22,11 @@ export class CadastrarComponent implements OnInit
  
   pessoa:pessoa= new pessoa();
 
-   cadastrar():void{this.pessoa.nome = this.nomes; this.pessoa.cpf = this.cpfs; this.pessoa.idade = this.idades}
-   
+   cadastrar():void{this.pessoa.nome = this.nomes; 
+    this.pessoa.cpf = this.cpfs; 
+    this.pessoa.idade = this.idades;   
+    this.service.cadastrar(this.pessoa).subscribe((pessoa)=>{console.log(pessoa);});}
+    
   ngOnInit(): void 
   {
 
